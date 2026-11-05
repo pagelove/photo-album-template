@@ -1,6 +1,5 @@
- ASSETS.md                 |  2 ++
- README.md                 |  2 ++
- audit/CHANGELOG.md        |  6 ++++++
- audit/source-sha256.json  | 14 +++++++-------
- site/records/content.html |  2 +-
- 5 files changed, 18 insertions(+), 8 deletions(-)
+ README.md                | 10 ++++++++++
+ REVIEW.md                | 10 ++++++++++
+ audit/CHANGELOG.md       |  5 +++++
+ audit/source-sha256.json | 10 +++++-----
+ 4 files changed, 30 insertions(+), 5 deletions(-)

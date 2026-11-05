@@ -28,3 +28,8 @@ Actor: Codex. Live review showed an empty public gallery because the single star
 
 ## PHOTO-008 — 2026-11-05T13:18:49.7074270Z
 Actor: Codex; reference007. Starter now contains one credited unchanged MIT design-reference PNG as data URL, explicit caption/alt, published presentation and preserved r-sample-1. All13 tests plus static parity/source checks pass. Source hashes and staged evidence refreshed before commit. Source update does not itself replace installed records; conditional disposable-fixture curation and browser viewer remain pending.
+
+## LIVE-REVIEW-20261105 — 2026-11-05T13:39:22.196Z
+Actor: Codex. Plan before documentation: record actual disposable live preview, owner/public source readback and observed browser tasks, retain pending native browser-account/private-app acceptance, and reconcile hashes/diff before publishing documentation. No runtime permission or data change in this batch. Source: approved execution/live fixture and user auth clarification. Affected README.md, REVIEW.md, audit closure.
+
+Result: documented the verified fictional live review and remaining boundaries without claiming authenticated application acceptance. Separate isolated capability fixtures passed valid200, invalid422, missing428, stale412, concurrent200+412, selector206 and denied reads; those fixture results are not inherited by this app. Temporary fixture PUT access was closed with explicit Deny controls and anonymous401 readback. No credential included. Code and installed records unchanged by this documentation batch.

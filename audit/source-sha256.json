@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-05T13:18:50.059Z",
+  "utc": "2026-11-05T13:39:25.136Z",
   "actor": "Codex",
   "repo": "pagelove/photo-album-template",
   "scope": "Candidate source closure; audit files excluded to avoid recursive receipts",
@@ -37,13 +37,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2618,
-      "sha256": "77a578b356a9004628785402ed540db81b8d6763f65ab0840bafed4a179022c2"
+      "bytes": 3765,
+      "sha256": "b1a8b97a9127ee105fb02b0238fa6c2040c83297a84dcc06747fa3bce8264570"
     },
     {
       "path": "REVIEW.md",
-      "bytes": 1767,
-      "sha256": "88032c5ed65b02e74b4050def728c98b3d8ab787dc03c7080e8122e0a211cc6b"
+      "bytes": 2914,
+      "sha256": "ab1a99d925d2156b9c804941d7a4f276feba11482466bbf6acb4be785ff3edb5"
     },
     {
       "path": "bun.lock",
