@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-05T04:12:03.726Z",
+  "utc": "2026-11-05T13:18:50.059Z",
   "actor": "Codex",
   "repo": "pagelove/photo-album-template",
   "scope": "Candidate source closure; audit files excluded to avoid recursive receipts",
@@ -22,8 +22,8 @@
     },
     {
       "path": "ASSETS.md",
-      "bytes": 342,
-      "sha256": "4ba1a10c29eb2da6da5094c43ff08c11bc892f5da6516c510901195683226dfa"
+      "bytes": 679,
+      "sha256": "22acdfe04ec93a6dc62375bc64bb08728a0ff98efbec86852efe440344ed5734"
     },
     {
       "path": "DESIGN.md",
@@ -37,8 +37,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2349,
-      "sha256": "6d302509f0871473ea87369b8bba9fa40fcffb111a550606f00c4c39db97cfc5"
+      "bytes": 2618,
+      "sha256": "77a578b356a9004628785402ed540db81b8d6763f65ab0840bafed4a179022c2"
     },
     {
       "path": "REVIEW.md",
@@ -152,8 +152,8 @@
     },
     {
       "path": "site/records/content.html",
-      "bytes": 848,
-      "sha256": "f46ac0e39b07dafc7e50ead1424d64579de1b3e9cb04298c902adfe6d90431c3"
+      "bytes": 68306,
+      "sha256": "e78ce182cc637d12455cbcca76ce2bed0ccbcd0b62aa174afdd73f425d77220a"
     },
     {
       "path": "site/styles.css",

@@ -25,3 +25,5 @@ Uses [Pagelove design-system](https://github.com/pagelove/design-system) at 0ca2
 Manage content reveals Edit profile/preferences. Changes to business identity, contact hours, biography, reporting month/category limits, weekly goals or service availability share the same HTML draft and conditional save as records. Category/tag/album and date controls filter derived views. Budget transfers are excluded from spending totals; fitness reports use Monday–Sunday civil dates; photo galleries include a keyboard viewer. Only controls relevant to this app are shown.
 
 The initial GitHub source is a reviewable candidate. The live editor is deliberately read-only until a supported authenticated persistence adapter is verified. Fictional loopback editing is available now; a DAV upload alone is not that adapter. No real confidential records should be placed in this template yet.
+
+The public starter gallery includes one licensed Pagelove design-system reference image so the album filter and viewer can be reviewed immediately. Replace it with your own permitted media. Existing installed records are never replaced automatically by a code update.

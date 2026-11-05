@@ -22,3 +22,9 @@ Domain control reconciliation: static record controls now match updated option c
 
 ## PACKAGE-006 — 2026-11-05T04:01:43.882Z
 Actor: Codex; reference approved execution / initial public candidate plan. Credential-pattern scan passed for the candidate text closure; source-sha256.json records 34 non-audit source files and hashes. Only fictional seeds and licensed assets included. Review boundaries in REVIEW.md retained. Standalone Bun dependency installation passed after the restricted temp-directory attempt failed; lifecycle scripts skipped. Initial public push to an empty main is planned, without force; runtime live acceptance remains pending. Staged review evidence follows.
+
+## PHOTO-007 — 2026-11-05T13:18:04.5654315Z
+Actor: Codex. Live review showed an empty public gallery because the single starter record was an unpublished empty upload placeholder. Plan: replace only the repository's fictional starter with one explicitly credited published design-reference image from the pinned MIT Pagelove design-system, keeping its stable ID. Preserve install/release seed-create-only policy; conditionally curate the disposable live fixture only if it still equals the exact prior starter. Add asset provenance, rerun13 tests/source checks, hash/review/commit/push and verify live viewer. Never replace edited user content or treat this view flag as private publication protection. Files: site/records/content.html, ASSETS.md, README.md and audit evidence.
+
+## PHOTO-008 — 2026-11-05T13:18:49.7074270Z
+Actor: Codex; reference007. Starter now contains one credited unchanged MIT design-reference PNG as data URL, explicit caption/alt, published presentation and preserved r-sample-1. All13 tests plus static parity/source checks pass. Source hashes and staged evidence refreshed before commit. Source update does not itself replace installed records; conditional disposable-fixture curation and browser viewer remain pending.
