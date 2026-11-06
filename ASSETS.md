@@ -11,3 +11,6 @@ Starter record imagery refreshed from pagelove/design-system @ dec4b08: designs/
 Design variety update: selected Invitation/dark, source dec4b08d12b98261bb6b52d9bfeb07c876b8f89d; unchanged selected theme/guide plus licensed Fraunces, Inter Tight, JetBrains Mono families at400/500/600. All font OFL notices retained. Historical Midnight files/provenance remain historical; active imports follow docs/design-source.json.
 
 Current refresh: complete Invitation/dark, source f41f4476b636c3b353f024c2cb9a1e2067b7de6b. Canonical theme/components/base and WOFF2 fonts; licenses retained. Nine original app silhouettes were authored for this refresh; no Pagelove brand affiliation is implied. Social composition uses the selected upstream template, exact bundled font metrics and outlined exports.
+
+## Approved CC0 sample photography
+Nine StockSnap photographs replace design reference screenshots. Source/license/processing/hash records: samples/SOURCES.json; optimized originals: samples/photos/. CC0-1.0, attribution optional. Gallery dates are illustrative.

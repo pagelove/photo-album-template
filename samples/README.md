@@ -1,0 +1,3 @@
+# Photo Album sample photography
+
+Nine user-approved StockSnap photographs, dedicated to the public domain under CC0. No visible attribution is required. SOURCES.json records photographers, source pages, license, download hashes, optimized-file hashes and dimensions. All gallery dates are illustrative; captions describe the demo collection. Optimized source images are in photos/. The HTML aggregate embeds those JPEGs so exported/imported records remain portable. These files are sample content, not user photos. Deployment updates must preserve real records; this task changes only the exact known fictional review seed.
