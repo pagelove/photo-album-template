@@ -1,3 +1,13 @@
+# Current album-first library acceptance
+
+2026-11-06T17:08:57.285Z — Codex. Primary acceptance: actual Pagelove-hosted demo at https://kayak-draw-9549.onpagelove.com/onboarding/after/demos/design-refresh-20261106/photo-album/. All seven requested improvements are implemented: album covers/opening; View albums; compact responsive grid; album create/rename/description/cover/move/removal; on-device multi-file upload previews/captions; keyboard/swipe-style/detail viewer; transactional device saving, explicit errors/recovery/Undo and HTML backup/import.
+
+Hosted browser verified creation/rename/cover, two real file uploads with captions/alt, photo move, album removal retaining photos, Undo, persistence after refresh, keyboard details, pointer-swipe navigation, real backup download/re-import, stale-tab rejection with retained draft and explicit reconcile, SVG rejection, and restoration of the original3albums/9photos. Actual320/768CSS iframe viewports had no horizontal document overflow; mobile viewer fit and Escape closed it. Physical phone/OS-file-drag/touch hardware and browser-disk quota exhaustion are not claimed.
+
+49 supplemental source/model/transaction/image tests passed, plus source/deploy preparation and frozen-lock dependency validation. Dev-only fake-indexeddb is pinned; app runtime adds no package dependency, auth or outside service. Version2 HTML migrates legacy samples/backups without photo identity/image changes. Starter records are preserved on code deployment. Current saved domain authority is the device's canonical HTML document; no shared-account synchronization or native authorization claim is made. Retained earlier dated reviews below describe older implementations and their actual limitations. Complete central audit: audit/2026-11-06-photo-library in the parent workspace.
+
+---
+
 # Candidate acceptance evidence
 
 Actor: Codex. UTC: 2026-11-05T03:54:47.498Z. Design revision: 0ca2336353647b8d2d726470046617163bbf6d67.

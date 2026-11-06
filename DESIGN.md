@@ -7,3 +7,7 @@ Read site/assets/pagelove-design/DESIGN.md (mode-specific), polish.md and identi
 Identity authority: branding/site.json and branding/mark.svg. Update the public URL for a new deployment, then run npm install and npm run branding. The source-pinned renderer lives in scripts/identity-kit; branding/renderer-input.json is derived upstream configuration, not app-domain data. Never edit generated identity/social exports directly.
 
 HTML source records, aggregate boundaries, save/recovery and accepted limits remain in docs/architecture.md and DOCUMENT-FIRST-REVIEW.md. This refresh preserves all records and domain formats. Browser and metadata verification pending for this revision.
+
+## Album-first composition
+
+Current entry uses library.css over the same canonical Invitation/dark tokens and local fonts. Album covers lead, with a compact three-column photo grid (two columns on narrow screens), calm neutral borders, meaningful cover imagery and clear edit/save states. Buttons retain brand foreground/background roles. The full-size viewer uses contained images and keyboard/pointer navigation; no decorative NE arrows or colored card rails are introduced.

@@ -25,3 +25,8 @@ A successful run establishes build-payload installation and readback on the sele
 Browser-based private record editing, protected drafts and booking administration remain separate supported-authentication/authorization integrations. Do not add a fake signed-in flag or embed the owner token to enable them. Use fictional review data until the target's protected read/write paths are accepted. Games retain device-local progress as documented. A deployment succeeds independently of these optional runtime integrations; it does not claim they passed.
 
 Official references: https://docs.pagelove.com/ and https://docs.pagelove.com/reference/reading-and-writing/ . Follow docs/architecture.md (where present), REVIEW.md and the document-first guide for the actual app's authority and limitations.
+## Device-local library deployment
+
+The current entry is library-app.mjs and saves version2 HTML documents on the visitor's device. Original hosted records are a read-only starter library; format1 and version2 documents are supported by the current source checker/reader. The generic legacy fixture writer is format1-only and is not used by this UI. Cloud/private-account saving is not configured. Do not enable browser DAV or inject the owner token to change that.
+
+Code releases preserve both installed starter records and existing device libraries. A user may export/import a backup through the UI; distributing that HTML as a new installation's starter source requires validation and an explicitly authorized content migration. Native shared persistence would require its own reviewed supported authenticated path. Hosted-first acceptance instructions are in testing.md.

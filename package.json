@@ -18,11 +18,12 @@
     "node": ">=22"
   },
   "devDependencies": {
-    "linkedom": "0.18.12",
     "@resvg/resvg-js": "2.6.2",
-    "fontkit": "2.0.4",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",
-    "fast-xml-parser": "5.12.0"
+    "fake-indexeddb": "6.2.7",
+    "fast-xml-parser": "5.12.0",
+    "fontkit": "2.0.4",
+    "linkedom": "0.18.12"
   }
 }

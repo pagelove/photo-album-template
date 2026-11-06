@@ -1,4 +1,18 @@
-# Collected Light: document-first contract
+# Collected Light — current architecture
+
+## Version2 photo library
+
+The current entry is library-app.mjs. It migrates legacy format1 photo records into a version2 semantic HTML document with stable Album records (title, description, cover photo reference), Photo records (stable album reference and existing photo fields), and collection Settings. Existing photo identities/image bytes survive migration; the public format1 sample seed is not rewritten. The working root DOM is the sole editable domain model; form staging and derived grids are nonauthoritative.
+
+The hosted app saves canonical HTML snapshots to IndexedDB on the user's device. One readwrite transaction compares the expected revision before accepting a replacement; a readback verifies the accepted document. An envelope contains only HTML, revision/saved time and the previous HTML snapshot. This is not a second editable JSON domain model. Autosave starts after committed form edits, shows progress/result, and blocks further automatic retries on conflict/error. Unsaved HTML recovery is kept in session storage; earlier drafts require explicit recovery or discard. Export/import validates complete HTML and preserves stable IDs. Five in-memory undo snapshots support recoverable edits/removal. There is no cross-device/shared-account synchronization in this variant, no DAV in the browser and no embedded credential. Source HTTP remains read-only; the old fixture writer remains legacy-only.
+
+Albums may be empty; names are unique case-insensitively. Covers must refer to member photos. Moving/removing a cover repairs its reference. Removing an album keeps its photos in Unsorted (or Recovered photos when removing Unsorted). Photo deletion, imports and edits are undoable in the current session. Full source contract: <=2MB canonical HTML, <=500 records, <=350k per image field, strict typed fields/IDs/URLs/structure. New uploads accept JPEG/PNG/WebP <=20MB input and25MP, resize/compress locally to a bounded JPEG, strip metadata and stage editable titles/captions/descriptions/date/album before atomic commit. Batches beyond the aggregate budget are rejected without partial replacement. Date inputs are civil dates; no capture-date inference is claimed.
+
+Primary acceptance is the actual hosted Pagelove origin; see testing.md. Negative model/CAS/image/storage fixtures supplement hosted browser checks and establish no platform authorization guarantees.
+
+## Retained legacy source/fixture contract
+
+### Format1 contract
 
 Guide: Document-first development edition 2.4 (Pagelove, CC BY 4.0). Apply W1–W8 and applicable R01–R12. Source: /records/content.html, section#records[data-app="photos"][data-format="1"]. Ordered bounded aggregate, ≤500 records and2MB UTF-8. Stable r-UUID IDs; typed HTML itemtype urn:Pagelove:photos:Record:1. Allowed fields/types/bounds: site/config.mjs. Unknown versions/fields/attributes and executable markup are rejected without replacement.
 
