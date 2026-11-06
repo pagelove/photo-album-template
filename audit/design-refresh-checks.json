@@ -1,0 +1,54 @@
+{
+  "utc": "2026-11-06T00:06:09.414Z",
+  "desktop": {
+    "app": "photo-album",
+    "font": true,
+    "heading": "Keep the moments.",
+    "mode": "dark",
+    "overflow": false
+  },
+  "mobile": {
+    "app": "photo-album",
+    "controlHeight": 46,
+    "overflow": false,
+    "width": 320
+  },
+  "task": {
+    "app": "photo-album",
+    "records": 3,
+    "empty": "0 photos",
+    "dialogState": {
+      "field": "Midnight workspace",
+      "focused": true,
+      "open": true
+    },
+    "escapeCloses": true
+  },
+  "commands": [
+    {
+      "args": [
+        "scripts/check.mjs"
+      ],
+      "status": 0
+    },
+    {
+      "args": [
+        "--test",
+        "tests/model.test.mjs",
+        "tests/domain.test.mjs",
+        "tests/persistence.test.mjs",
+        "tests/deployment.test.mjs"
+      ],
+      "status": 0
+    },
+    {
+      "args": [
+        "scripts/deploy.mjs",
+        "--prepare"
+      ],
+      "status": 0
+    }
+  ],
+  "reducedMotion": "Upstream base.css device/user rules retained; OS emulation not exercised.",
+  "limits": "Local fixture/browser review; no new production authorization/private-data guarantees."
+}
