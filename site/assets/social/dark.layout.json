@@ -1,0 +1,16 @@
+{
+  "design": "invitation",
+  "mode": "dark",
+  "titleLines": [
+    "Keep the moments."
+  ],
+  "titleSize": 84,
+  "descriptionLines": [
+    "A fictional collection of places, people and small details."
+  ],
+  "fonts": [
+    "Fraunces",
+    "Inter Tight"
+  ],
+  "safeInset": 64
+}
