@@ -147,3 +147,12 @@ Supplemental model/DOM tests plus actual hosted workflows, including negative/ca
 
 ## PHOTO-GOALS-REVIEW-IMPLEMENTED — 2026-11-06T17:35:15.7708788Z — Codex
 Request: goal-based review; plan PHOTO-GOALS-REVIEW-PLAN. Added atomic batch organization, album search, unfinished-form discard guards/focus restoration, history navigation, staged upload-budget checks and mobile action layout. Files: site/index.html, library-app.mjs, library-model.mjs, library.css; tests/library-review.test.mjs; docs/goal-review.md. Why: address observed usability and work-loss gaps. 53 tests pass; hosted QA workflows pass. Existing seed/device libraries retained. Root audit contains hashes, diff and release receipts. Initial restricted-network PROPFIND failed before writes; explicit approved network retry succeeded. Initial same-version CSS check observed cached layout; coupled cache version r2 remedied it and hosted narrow layout reverified. Account synchronization remains outside this device-local contract.
+
+## DEMO-LAYOUT-PLAN — 2026-11-06T18:00:21.866Z — Codex
+User: Check all demos for misses like the Move to album wrap. Plan: Keep Move to album on one line, wrap its label and dropdown as one group, and stack the group cleanly on narrow screens. Target site/library.css, site/index.html; CSS layout only, preserve chosen design, source records and behavior. Verify actual hosted320/768/1024/1280 layouts and affected existing checks. Parent evidence: audit/2026-11-06-demo-layout-review/.
+
+## DEMO-LAYOUT-REFINEMENT — 2026-11-06T18:06:07.937Z — Codex
+Hosted review found natural wrapping could strand a single action. Group count/select-all and move/remove/done separately; compact dropdown to11rem; preserve one-line label and full-width actions on narrow screens. Source index.html/library.css only. Recheck320/375/768/1024/1280/1768 before completion.
+
+## DEMO-LAYOUT-RESULT — 2026-11-06T18:09:22.925Z — Codex
+Plan DEMO-LAYOUT-PLAN completed. Short controls remain intact, whole groups reflow, narrow figures/labels have readable space. Files and hashes: audit/layout-review-20261106.json. Hosted layout/screenshots verified; existing affected tests and community source checks pass. Existing records unchanged. No domain or persistence changes. Root review records publisher CRM projection correction, exact receipts and viewport limitations.
