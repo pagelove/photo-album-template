@@ -1,38 +1,38 @@
 ---
-"name": "Midnight"
+"name": "Invitation"
 "colors":
-  "primary": "#dcd4ec"
-  "neutral": "#100d17"
-  "accent": "#b491ec"
-  "border": "#33283f"
+  "primary": "#e8e4df"
+  "neutral": "#0c0e1a"
+  "accent": "#b8b0d8"
+  "border": "#272737"
 "typography":
   "heading":
-    "fontFamily": "Inter"
-    "fontSize": "2.75rem"
+    "fontFamily": "Fraunces"
+    "fontSize": "3.125rem"
     "fontWeight": 400
     "lineHeight": 1.1
-    "letterSpacing": "-.04em"
+    "letterSpacing": "-.025em"
   "body":
-    "fontFamily": "Inter"
+    "fontFamily": "Inter Tight"
     "fontSize": "1rem"
     "fontWeight": 400
     "lineHeight": 1.5
 "rounded":
-  "card": "8px"
-  "button": "8px"
+  "card": "16px"
+  "button": "100px"
 "spacing":
   "small": "8px"
   "medium": "16px"
-  "large": "20px"
+  "large": "32px"
 ---
 
-# Midnight
+# Invitation
 
 ## Overview
 
 Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: dark. Initial mode: dark.
+Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: dark. Initial mode: dark.
 
 ## Colors
 

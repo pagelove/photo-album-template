@@ -1,59 +1,64 @@
 {
   "repository": "pagelove/design-system",
   "revision": "dec4b08d12b98261bb6b52d9bfeb07c876b8f89d",
-  "design": "midnight",
+  "design": "invitation",
   "mode": "dark",
-  "integration": "Independent theme, shared components/base; Inter-only font subset, licensed upstream files unchanged.",
+  "integration": "Complete independent selected theme plus shared base/components; local selected heading/body/code font families.",
   "files": [
     {
-      "source": "styles/library-components.css",
-      "file": "library-components.css",
-      "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
-    },
-    {
-      "source": "styles/base.css",
-      "file": "base.css",
-      "sha256": "0f38ac245b5d2a24008b2fe572c1936598d82dd4931d2943ce341db0db515008"
-    },
-    {
-      "source": "designs/midnight/styles/theme.css",
+      "source": "designs/invitation/styles/theme.css",
       "file": "theme.css",
-      "sha256": "d5a843bcec746058786ffdecef3e24cc1e75ec5f9b8a1e6b65781193b8742f5c"
+      "sha256": "8e3dc4242fa1d76697aaca164cd03f85314db8cf9b3343e5f6213a46ae71a743"
     },
     {
-      "source": "LICENSE",
-      "file": "LICENSE",
-      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
-    },
-    {
-      "source": "NOTICE.md",
-      "file": "NOTICE.md",
-      "sha256": "64c68a9d4ad430d7a3291b37b5e405e6436cb20d53acf6972643269ddde75cea"
-    },
-    {
-      "source": "designs/midnight/DESIGN.md",
+      "source": "designs/invitation/DESIGN.md",
       "file": "DESIGN.md",
-      "sha256": "685c24f9ba02b26f9aabc06e1ba2d44d34ae9827f310e9add1bb1befa7fcfa5d"
+      "sha256": "f168b4ef17a42d3b03d010a46cd36043425097c9c2552b58e69bd6052e116504"
     },
     {
-      "source": "assets/fonts/inter-400.ttf",
-      "file": "assets/fonts/inter-400.ttf",
-      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+      "source": "assets/fonts/fraunces-400.ttf",
+      "file": "assets/fonts/fraunces-400.ttf",
+      "sha256": "3eb6cf0a14feb1876cc464fa093af4e0c5b05dc46dec65619c1d95f2a1ab5aa7"
     },
     {
-      "source": "assets/fonts/inter-500.ttf",
-      "file": "assets/fonts/inter-500.ttf",
-      "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
+      "source": "assets/fonts/fraunces-500.ttf",
+      "file": "assets/fonts/fraunces-500.ttf",
+      "sha256": "0c2fad18ed36cc400041f1e281ee79954a329b345caffc38dfaa3bb8bcef57de"
     },
     {
-      "source": "assets/fonts/inter-600.ttf",
-      "file": "assets/fonts/inter-600.ttf",
-      "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
+      "source": "assets/fonts/fraunces-600.ttf",
+      "file": "assets/fonts/fraunces-600.ttf",
+      "sha256": "ff7cf63717c27756df857ca12045a83522569f7b561bedaff813a25274eb263f"
     },
     {
-      "source": "assets/fonts/inter-OFL.txt",
-      "file": "assets/fonts/inter-OFL.txt",
-      "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
+      "source": "assets/fonts/intertight-400.ttf",
+      "file": "assets/fonts/intertight-400.ttf",
+      "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f"
+    },
+    {
+      "source": "assets/fonts/intertight-500.ttf",
+      "file": "assets/fonts/intertight-500.ttf",
+      "sha256": "c2a4bdafb30500a3bd0843f95ad659ad38492f025837803e6a8ef8672c575e8e"
+    },
+    {
+      "source": "assets/fonts/intertight-600.ttf",
+      "file": "assets/fonts/intertight-600.ttf",
+      "sha256": "a40a1fdc93cadcbb0e3ba16d6010988118a1a3add06a097330b09cb41c2b8d45"
+    },
+    {
+      "source": "assets/fonts/jetbrainsmono-400.ttf",
+      "file": "assets/fonts/jetbrainsmono-400.ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+    },
+    {
+      "source": "assets/fonts/jetbrainsmono-500.ttf",
+      "file": "assets/fonts/jetbrainsmono-500.ttf",
+      "sha256": "3386a05f6ece969e4537de6be894170d20558e82f7d56c8c5d332972ef172160"
+    },
+    {
+      "source": "assets/fonts/jetbrainsmono-600.ttf",
+      "file": "assets/fonts/jetbrainsmono-600.ttf",
+      "sha256": "df54dbfafba61d4911eb3dab9bba2d20531fb009f01d64dd42fa96ab862584d8"
     }
   ]
 }

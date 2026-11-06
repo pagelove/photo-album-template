@@ -1,0 +1,917 @@
+diff --git a/ASSETS.md b/ASSETS.md
+index 46bf2c2..5f76dd8 100644
+--- a/ASSETS.md
++++ b/ASSETS.md
+@@ -7,3 +7,5 @@ Starter reference image: `assets/previews/catalog-overview.png` from pagelove/de
+ Design refresh: Midnight independent theme and shared base/components from pagelove/design-system at dec4b08d12b98261bb6b52d9bfeb07c876b8f89d; MIT notices retained. Local Inter400/500/600 fonts are OFL licensed with included inter-OFL.txt. No external font service.
+ 
+ Starter record imagery refreshed from pagelove/design-system @ dec4b08: designs/midnight/previews/workspace-dark.png, assets/previews/workspace-detail.png, assets/previews/workspace-settings.png. Unmodified MIT reference screenshots embedded as PNG data URLs. Reference imagery is labeled as a sample, not original client work; seed-only, existing user records remain preserved on deployment.
++
++Design variety update: selected Invitation/dark, source dec4b08d12b98261bb6b52d9bfeb07c876b8f89d; unchanged selected theme/guide plus licensed Fraunces, Inter Tight, JetBrains Mono families at400/500/600. All font OFL notices retained. Historical Midnight files/provenance remain historical; active imports follow docs/design-source.json.
+diff --git a/DESIGN.md b/DESIGN.md
+index 98b8d5d..af06c48 100644
+--- a/DESIGN.md
++++ b/DESIGN.md
+@@ -1,9 +1,11 @@
+-# Collected Light
++# photo-album — Invitation
+ 
+-Foundation: pagelove/design-system @ dec4b08d12b98261bb6b52d9bfeb07c876b8f89d. Selected design: Midnight / dark, the catalog default. Read the vendored design guide and provenance in docs/design-source.json. The independent theme is copied unchanged from upstream; do not edit generated values. Shared component/base CSS plus licensed local Inter fonts supply controls and typography. Midnight has no light mode.
++Selected: **Invitation / dark** from pagelove/design-system @ dec4b08d12b98261bb6b52d9bfeb07c876b8f89d. This assignment is part of the nine-app comparison covering all five designs and all eight available design/mode combinations. Use the complete selected design, never a palette mixed with Midnight.
+ 
+-Use plum page/panel/inset surfaces, semantic lavender actions, 44px targets, exported spacing, compact geometry and sans-serif headings. App-specific layout is site/styles.css: publishing pages use clear open introductions and service/project/article compositions; personal tools use compact task/report collections. Keep neutral borders, no decorative northeast arrows or accent card rails. Preserve document-first domain/persistence and draft/conflict contracts from docs/architecture.md. Images are documented sample reference artwork, never claims of client work.
++Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract.
+ 
+-Verification: check/test/prepare and responsive/browser tasks pending for this revision.
++Canonical selected theme and its guide are vendored unchanged under site/assets/pagelove-design/. Component/base CSS remains shared; local licensed heading/body/code fonts are included. docs/design-source.json records exact source hashes. App-specific semantic layout remains site/styles.css, using design geometry/spacing/type roles. Preserve neutral borders,44px controls, visible focus, reduced-motion rules and no decorative northeast arrows.
+ 
+-Verified: check, full model/domain/persistence/deployment tests and prepare pass. Browser desktop1280px/mobile320px layout, local Inter font loading, search empty/recovery, editor prefill/focus and Escape cancellation pass. See audit/design-refresh-checks.json. Physical-device/screen-reader and OS motion emulation not exercised; inherited reduced-motion rules retained.
++Domain format1/HTML authority, typed settings, recovery/concurrency and save/access limitations remain in docs/architecture.md. This design change does not migrate user records. Verification pending for this revision.
++
++Verified: full check/test/prepare pass;1280px and320px browser layouts, actual selected heading/body fonts, source theme geometry/colors, search no-results/recovery, editor focus and Escape cancellation pass. See audit/design-variety-checks.json. Existing persistence/access limitations remain; no live private-data deployment.
+diff --git a/REVIEW.md b/REVIEW.md
+index d464a06..ac43bc7 100644
+--- a/REVIEW.md
++++ b/REVIEW.md
+@@ -27,3 +27,6 @@ PASS: repository check, full tests and prepared-site credential scan; eleven add
+ 
+ ## Midnight design refresh
+ Adopted pagelove/design-system dec4b08 Midnight/dark. Browser screenshots and checks are in audit/. The redesign preserves format1 and existing persistence/access limitations. Existing deployed records remain preserved. Local check/tests/prepare and desktop/mobile/editor/search tasks pass; physical-device/screen-reader and OS motion emulation remain outside this review.
++
++## Design collection coverage
++Current assigned design/mode is recorded in DESIGN.md and docs/design-source.json. This supersedes the historical all-Midnight selection above. Local check/test/prepare and desktop/mobile/search/editor checks pass; see audit/design-variety-checks.json and audit/screenshots/variety-*.jpg. No records/persistence/access contract changes.
+diff --git a/audit/CHANGELOG.md b/audit/CHANGELOG.md
+index efbef58..ddf66c3 100644
+--- a/audit/CHANGELOG.md
++++ b/audit/CHANGELOG.md
+@@ -53,3 +53,12 @@ DESIGN-REFRESH mobile correction 2026-11-06T00:03:23.888Z: at320px long brand pl
+ 
+ ## DESIGN-REFRESH-VERIFIED — 2026-11-06T00:06:09.430Z
+ Actor: Codex; reference DESIGN-REFRESH-PLAN. check/full model-domain-persistence-deployment tests/prepare pass. Actual1280px/320px browser checks show loaded local Inter and no page overflow,≥44px visible controls. Search no-results/recovery, native editor focus/prefill and Escape cancellation pass; Photo Album next/close viewer passes. Final screenshots inspected after spacing/header fixes. Site SHA256 and browser results saved. Reduced-motion rules retained; OS emulation/physical devices/screen readers untested. No user source migrations or new production guarantees. Publication next.
++
++## DESIGN-VARIETY-PLAN — 2026-11-06T00:24:14.310Z
++Actor: Codex. User requests coverage across all available designs rather than all-Midnight. Plan: use scoped app mapping in docs/design-source.json, selected complete theme/mode and corresponding licensed local fonts. Preserve format1 records, editor/save/recovery semantics and existing app layout. Update design documentation/provenance, run checks/tests/prepare, inspect desktop/mobile/control tasks and publish exact matching screenshot/repo. No additional access guarantees or user-record migration. Pending.
++
++## DESIGN-VARIETY-APPLIED — 2026-11-06T00:24:59.609Z
++Actor: Codex; reference DESIGN-VARIETY-PLAN. Selected complete Invitation/dark theme, fonts and type/shape/spacing roles from dec4b08d12b98261bb6b52d9bfeb07c876b8f89d. Independent theme bytes unchanged; no domain/app behavior/source record changes. Design documentation/provenance updated. Browser/check verification pending.
++
++## DESIGN-VARIETY-VERIFIED — 2026-11-06T00:27:44.860Z
++Actor: Codex; reference DESIGN-VARIETY-PLAN. invitation/dark renders full selected typography/colors/geometry with local fonts. check/full model-domain-persistence-deployment tests/prepare pass. Desktop1280/mobile320 no page overflow; native search empty/recovery and editor focus/Escape pass. Screenshots inspected, source hashes/results saved. No app behavior or source record changes. Device motion rules retained; OS emulation/physical devices/screen readers untested. Publication next.
+diff --git a/audit/design-variety-checks.json b/audit/design-variety-checks.json
+new file mode 100644
+index 0000000..804365a
+--- /dev/null
++++ b/audit/design-variety-checks.json
+@@ -0,0 +1,56 @@
++{
++  "utc": "2026-11-06T00:27:44.829Z",
++  "app": "photo-album",
++  "design": "invitation",
++  "mode": "dark",
++  "desktop": {
++    "app": "photo-album",
++    "background": "rgb(12, 14, 26)",
++    "bodyFamily": "\"Inter Tight\", system-ui, sans-serif",
++    "bodyFontReady": true,
++    "cardRadius": "16px",
++    "design": "invitation",
++    "headingFamily": "Fraunces, Georgia, serif",
++    "headingFontReady": true,
++    "mode": "dark",
++    "overflow": false
++  },
++  "mobile": {
++    "app": "photo-album",
++    "headerActionHeight": 46,
++    "overflow": false,
++    "width": 320
++  },
++  "tasks": {
++    "app": "photo-album",
++    "empty": "0 photos",
++    "dialogFocus": true,
++    "escapeCloses": true
++  },
++  "checks": [
++    {
++      "args": [
++        "scripts/check.mjs"
++      ],
++      "status": 0
++    },
++    {
++      "args": [
++        "--test",
++        "tests/model.test.mjs",
++        "tests/domain.test.mjs",
++        "tests/persistence.test.mjs",
++        "tests/deployment.test.mjs"
++      ],
++      "status": 0
++    },
++    {
++      "args": [
++        "scripts/deploy.mjs",
++        "--prepare"
++      ],
++      "status": 0
++    }
++  ],
++  "limits": "Browser local fixture; OS motion emulation/physical device/screen reader and new production permissions not tested."
++}
+diff --git a/audit/design-variety-sha256.json b/audit/design-variety-sha256.json
+new file mode 100644
+index 0000000..00f1b74
+--- /dev/null
++++ b/audit/design-variety-sha256.json
+@@ -0,0 +1,126 @@
++[
++  {
++    "file": "site/app.mjs",
++    "sha256": "ad916532f14d969e90fbd308684bb52b89a2932b3bac131aa53056b68aac2012"
++  },
++  {
++    "file": "site/assets/pagelove-design/app.css",
++    "sha256": "f1466c8f368cacc3a3e7f0c0d5aa3c6744384ba0821600dccdb60f87a84ee7d2"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/fraunces-400.ttf",
++    "sha256": "3eb6cf0a14feb1876cc464fa093af4e0c5b05dc46dec65619c1d95f2a1ab5aa7"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/fraunces-500.ttf",
++    "sha256": "0c2fad18ed36cc400041f1e281ee79954a329b345caffc38dfaa3bb8bcef57de"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/fraunces-600.ttf",
++    "sha256": "ff7cf63717c27756df857ca12045a83522569f7b561bedaff813a25274eb263f"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/fraunces-OFL.txt",
++    "sha256": "6bc1ce31d0cea483d3ab7121b7f97174ada36abff02d33203423d17d4f5fbbe5"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-400.ttf",
++    "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-500.ttf",
++    "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-600.ttf",
++    "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/inter-OFL.txt",
++    "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/intertight-400.ttf",
++    "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/intertight-500.ttf",
++    "sha256": "c2a4bdafb30500a3bd0843f95ad659ad38492f025837803e6a8ef8672c575e8e"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/intertight-600.ttf",
++    "sha256": "a40a1fdc93cadcbb0e3ba16d6010988118a1a3add06a097330b09cb41c2b8d45"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/intertight-OFL.txt",
++    "sha256": "bb549262d232ac5e0d48990b8574b738584560de3253b70aef142afb53ad93d2"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/jetbrainsmono-400.ttf",
++    "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/jetbrainsmono-500.ttf",
++    "sha256": "3386a05f6ece969e4537de6be894170d20558e82f7d56c8c5d332972ef172160"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/jetbrainsmono-600.ttf",
++    "sha256": "df54dbfafba61d4911eb3dab9bba2d20531fb009f01d64dd42fa96ab862584d8"
++  },
++  {
++    "file": "site/assets/pagelove-design/assets/fonts/jetbrainsmono-OFL.txt",
++    "sha256": "39bdad1d71beb097624b40c5c79de34f0062f7fbc53b39f262e2fe259145dba7"
++  },
++  {
++    "file": "site/assets/pagelove-design/base.css",
++    "sha256": "0f38ac245b5d2a24008b2fe572c1936598d82dd4931d2943ce341db0db515008"
++  },
++  {
++    "file": "site/assets/pagelove-design/DESIGN.md",
++    "sha256": "f168b4ef17a42d3b03d010a46cd36043425097c9c2552b58e69bd6052e116504"
++  },
++  {
++    "file": "site/assets/pagelove-design/fonts.css",
++    "sha256": "1269d3e1f1431177155e571acee89f273ead3e79985ab2458248e2bd1d1b1066"
++  },
++  {
++    "file": "site/assets/pagelove-design/library-components.css",
++    "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
++  },
++  {
++    "file": "site/assets/pagelove-design/LICENSE",
++    "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
++  },
++  {
++    "file": "site/assets/pagelove-design/NOTICE.md",
++    "sha256": "64c68a9d4ad430d7a3291b37b5e405e6436cb20d53acf6972643269ddde75cea"
++  },
++  {
++    "file": "site/assets/pagelove-design/theme.css",
++    "sha256": "8e3dc4242fa1d76697aaca164cd03f85314db8cf9b3343e5f6213a46ae71a743"
++  },
++  {
++    "file": "site/config.mjs",
++    "sha256": "e220cde485a758ccd495cf90e1bae22131ae8c69246fdc98c21fd72514429b10"
++  },
++  {
++    "file": "site/domain.mjs",
++    "sha256": "0ebd2960ce8dc40dfafeb0b87796fdc90d757e20b4ec62595965a5e3578ce5f7"
++  },
++  {
++    "file": "site/index.html",
++    "sha256": "531fbd5d3705de7549355c4adba9d461e85fd7bf8c247dc8112a210746899794"
++  },
++  {
++    "file": "site/model.mjs",
++    "sha256": "a1c33031e9fd32fb8988ec726a493a5e170e80c6c203274b868679642784e469"
++  },
++  {
++    "file": "site/records/content.html",
++    "sha256": "00601dfcd0a9e136bb784706b0ff274f025ba2013160838c1fc7f985f8d08ed0"
++  },
++  {
++    "file": "site/styles.css",
++    "sha256": "ed391e035cf8adb19d314670ffd22db37b04f7d1b416a81033bd4c7570db66ef"
++  }
++]
+diff --git a/audit/screenshots/variety-desktop.jpg b/audit/screenshots/variety-desktop.jpg
+new file mode 100644
+index 0000000..1584b05
+Binary files /dev/null and b/audit/screenshots/variety-desktop.jpg differ
+diff --git a/audit/screenshots/variety-mobile.jpg b/audit/screenshots/variety-mobile.jpg
+new file mode 100644
+index 0000000..07f4ac8
+Binary files /dev/null and b/audit/screenshots/variety-mobile.jpg differ
+diff --git a/docs/design-source.json b/docs/design-source.json
+index a026bed..833d7f2 100644
+--- a/docs/design-source.json
++++ b/docs/design-source.json
+@@ -1,59 +1,64 @@
+ {
+   "repository": "pagelove/design-system",
+   "revision": "dec4b08d12b98261bb6b52d9bfeb07c876b8f89d",
+-  "design": "midnight",
++  "design": "invitation",
+   "mode": "dark",
+-  "integration": "Independent theme, shared components/base; Inter-only font subset, licensed upstream files unchanged.",
++  "integration": "Complete independent selected theme plus shared base/components; local selected heading/body/code font families.",
+   "files": [
+     {
+-      "source": "styles/library-components.css",
+-      "file": "library-components.css",
+-      "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
++      "source": "designs/invitation/styles/theme.css",
++      "file": "theme.css",
++      "sha256": "8e3dc4242fa1d76697aaca164cd03f85314db8cf9b3343e5f6213a46ae71a743"
+     },
+     {
+-      "source": "styles/base.css",
+-      "file": "base.css",
+-      "sha256": "0f38ac245b5d2a24008b2fe572c1936598d82dd4931d2943ce341db0db515008"
++      "source": "designs/invitation/DESIGN.md",
++      "file": "DESIGN.md",
++      "sha256": "f168b4ef17a42d3b03d010a46cd36043425097c9c2552b58e69bd6052e116504"
+     },
+     {
+-      "source": "designs/midnight/styles/theme.css",
+-      "file": "theme.css",
+-      "sha256": "d5a843bcec746058786ffdecef3e24cc1e75ec5f9b8a1e6b65781193b8742f5c"
++      "source": "assets/fonts/fraunces-400.ttf",
++      "file": "assets/fonts/fraunces-400.ttf",
++      "sha256": "3eb6cf0a14feb1876cc464fa093af4e0c5b05dc46dec65619c1d95f2a1ab5aa7"
+     },
+     {
+-      "source": "LICENSE",
+-      "file": "LICENSE",
+-      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
++      "source": "assets/fonts/fraunces-500.ttf",
++      "file": "assets/fonts/fraunces-500.ttf",
++      "sha256": "0c2fad18ed36cc400041f1e281ee79954a329b345caffc38dfaa3bb8bcef57de"
+     },
+     {
+-      "source": "NOTICE.md",
+-      "file": "NOTICE.md",
+-      "sha256": "64c68a9d4ad430d7a3291b37b5e405e6436cb20d53acf6972643269ddde75cea"
++      "source": "assets/fonts/fraunces-600.ttf",
++      "file": "assets/fonts/fraunces-600.ttf",
++      "sha256": "ff7cf63717c27756df857ca12045a83522569f7b561bedaff813a25274eb263f"
+     },
+     {
+-      "source": "designs/midnight/DESIGN.md",
+-      "file": "DESIGN.md",
+-      "sha256": "685c24f9ba02b26f9aabc06e1ba2d44d34ae9827f310e9add1bb1befa7fcfa5d"
++      "source": "assets/fonts/intertight-400.ttf",
++      "file": "assets/fonts/intertight-400.ttf",
++      "sha256": "27350bc95b961b9b4e1a80d872f49e903fe727f290f6b2a079e67ceb1685fb1f"
++    },
++    {
++      "source": "assets/fonts/intertight-500.ttf",
++      "file": "assets/fonts/intertight-500.ttf",
++      "sha256": "c2a4bdafb30500a3bd0843f95ad659ad38492f025837803e6a8ef8672c575e8e"
+     },
+     {
+-      "source": "assets/fonts/inter-400.ttf",
+-      "file": "assets/fonts/inter-400.ttf",
+-      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
++      "source": "assets/fonts/intertight-600.ttf",
++      "file": "assets/fonts/intertight-600.ttf",
++      "sha256": "a40a1fdc93cadcbb0e3ba16d6010988118a1a3add06a097330b09cb41c2b8d45"
+     },
+     {
+-      "source": "assets/fonts/inter-500.ttf",
+-      "file": "assets/fonts/inter-500.ttf",
+-      "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
++      "source": "assets/fonts/jetbrainsmono-400.ttf",
++      "file": "assets/fonts/jetbrainsmono-400.ttf",
++      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3"
+     },
+     {
+-      "source": "assets/fonts/inter-600.ttf",
+-      "file": "assets/fonts/inter-600.ttf",
+-      "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
++      "source": "assets/fonts/jetbrainsmono-500.ttf",
++      "file": "assets/fonts/jetbrainsmono-500.ttf",
++      "sha256": "3386a05f6ece969e4537de6be894170d20558e82f7d56c8c5d332972ef172160"
+     },
+     {
+-      "source": "assets/fonts/inter-OFL.txt",
+-      "file": "assets/fonts/inter-OFL.txt",
+-      "sha256": "78c5db5075157265b6c50efe8532587adfc6f5f2ea7bae40acfa067e2e684a7c"
++      "source": "assets/fonts/jetbrainsmono-600.ttf",
++      "file": "assets/fonts/jetbrainsmono-600.ttf",
++      "sha256": "df54dbfafba61d4911eb3dab9bba2d20531fb009f01d64dd42fa96ab862584d8"
+     }
+   ]
+ }
+diff --git a/site/assets/pagelove-design/DESIGN.md b/site/assets/pagelove-design/DESIGN.md
+index d0e4f2b..c1666f2 100644
+--- a/site/assets/pagelove-design/DESIGN.md
++++ b/site/assets/pagelove-design/DESIGN.md
+@@ -1,38 +1,38 @@
+ ---
+-"name": "Midnight"
++"name": "Invitation"
+ "colors":
+-  "primary": "#dcd4ec"
+-  "neutral": "#100d17"
+-  "accent": "#b491ec"
+-  "border": "#33283f"
++  "primary": "#e8e4df"
++  "neutral": "#0c0e1a"
++  "accent": "#b8b0d8"
++  "border": "#272737"
+ "typography":
+   "heading":
+-    "fontFamily": "Inter"
+-    "fontSize": "2.75rem"
++    "fontFamily": "Fraunces"
++    "fontSize": "3.125rem"
+     "fontWeight": 400
+     "lineHeight": 1.1
+-    "letterSpacing": "-.04em"
++    "letterSpacing": "-.025em"
+   "body":
+-    "fontFamily": "Inter"
++    "fontFamily": "Inter Tight"
+     "fontSize": "1rem"
+     "fontWeight": 400
+     "lineHeight": 1.5
+ "rounded":
+-  "card": "8px"
+-  "button": "8px"
++  "card": "16px"
++  "button": "100px"
+ "spacing":
+   "small": "8px"
+   "medium": "16px"
+-  "large": "20px"
++  "large": "32px"
+ ---
+ 
+-# Midnight
++# Invitation
+ 
+ ## Overview
+ 
+ Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
+ 
+-Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: dark. Initial mode: dark.
++Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: dark. Initial mode: dark.
+ 
+ ## Colors
+ 
+diff --git a/site/assets/pagelove-design/assets/fonts/fraunces-400.ttf b/site/assets/pagelove-design/assets/fonts/fraunces-400.ttf
+new file mode 100644
+index 0000000..2af0040
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/fraunces-400.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/fraunces-500.ttf b/site/assets/pagelove-design/assets/fonts/fraunces-500.ttf
+new file mode 100644
+index 0000000..f9bba99
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/fraunces-500.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/fraunces-600.ttf b/site/assets/pagelove-design/assets/fonts/fraunces-600.ttf
+new file mode 100644
+index 0000000..acd422a
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/fraunces-600.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/fraunces-OFL.txt b/site/assets/pagelove-design/assets/fonts/fraunces-OFL.txt
+new file mode 100644
+index 0000000..0dc4114
+--- /dev/null
++++ b/site/assets/pagelove-design/assets/fonts/fraunces-OFL.txt
+@@ -0,0 +1,93 @@
++Copyright 2018 The Fraunces Project Authors
++
++This Font Software is licensed under the SIL Open Font License, Version 1.1.
++This license is copied below, and is also available with a FAQ at:
++http://scripts.sil.org/OFL
++
++
++-----------------------------------------------------------
++SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
++-----------------------------------------------------------
++
++PREAMBLE
++The goals of the Open Font License (OFL) are to stimulate worldwide
++development of collaborative font projects, to support the font creation
++efforts of academic and linguistic communities, and to provide a free and
++open framework in which fonts may be shared and improved in partnership
++with others.
++
++The OFL allows the licensed fonts to be used, studied, modified and
++redistributed freely as long as they are not sold by themselves. The
++fonts, including any derivative works, can be bundled, embedded,
++redistributed and/or sold with any software provided that any reserved
++names are not used by derivative works. The fonts and derivatives,
++however, cannot be released under any other type of license. The
++requirement for fonts to remain under this license does not apply
++to any document created using the fonts or their derivatives.
++
++DEFINITIONS
++"Font Software" refers to the set of files released by the Copyright
++Holder(s) under this license and clearly marked as such. This may
++include source files, build scripts and documentation.
++
++"Reserved Font Name" refers to any names specified as such after the
++copyright statement(s).
++
++"Original Version" refers to the collection of Font Software components as
++distributed by the Copyright Holder(s).
++
++"Modified Version" refers to any derivative made by adding to, deleting,
++or substituting -- in part or in whole -- any of the components of the
++Original Version, by changing formats or by porting the Font Software to a
++new environment.
++
++"Author" refers to any designer, engineer, programmer, technical
++writer or other person who contributed to the Font Software.
++
++PERMISSION & CONDITIONS
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of the Font Software, to use, study, copy, merge, embed, modify,
++redistribute, and sell modified and unmodified copies of the Font
++Software, subject to the following conditions:
++
++1) Neither the Font Software nor any of its individual components,
++in Original or Modified Versions, may be sold by itself.
++
++2) Original or Modified Versions of the Font Software may be bundled,
++redistributed and/or sold with any software, provided that each copy
++contains the above copyright notice and this license. These can be
++included either as stand-alone text files, human-readable headers or
++in the appropriate machine-readable metadata fields within text or
++binary files as long as those fields can be easily viewed by the user.
++
++3) No Modified Version of the Font Software may use the Reserved Font
++Name(s) unless explicit written permission is granted by the corresponding
++Copyright Holder. This restriction only applies to the primary font name as
++presented to the users.
++
++4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
++Software shall not be used to promote, endorse or advertise any
++Modified Version, except to acknowledge the contribution(s) of the
++Copyright Holder(s) and the Author(s) or with their explicit written
++permission.
++
++5) The Font Software, modified or unmodified, in part or in whole,
++must be distributed entirely under this license, and must not be
++distributed under any other license. The requirement for fonts to
++remain under this license does not apply to any document created
++using the Font Software.
++
++TERMINATION
++This license becomes null and void if any of the above conditions are
++not met.
++
++DISCLAIMER
++THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
++OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
++COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
++INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
++DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
++OTHER DEALINGS IN THE FONT SOFTWARE.
+diff --git a/site/assets/pagelove-design/assets/fonts/intertight-400.ttf b/site/assets/pagelove-design/assets/fonts/intertight-400.ttf
+new file mode 100644
+index 0000000..cc55dd5
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/intertight-400.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/intertight-500.ttf b/site/assets/pagelove-design/assets/fonts/intertight-500.ttf
+new file mode 100644
+index 0000000..fa69f96
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/intertight-500.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/intertight-600.ttf b/site/assets/pagelove-design/assets/fonts/intertight-600.ttf
+new file mode 100644
+index 0000000..64eb08e
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/intertight-600.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/intertight-OFL.txt b/site/assets/pagelove-design/assets/fonts/intertight-OFL.txt
+new file mode 100644
+index 0000000..f2124f0
+--- /dev/null
++++ b/site/assets/pagelove-design/assets/fonts/intertight-OFL.txt
+@@ -0,0 +1,93 @@
++Copyright 2022 The Inter Project Authors
++
++This Font Software is licensed under the SIL Open Font License, Version 1.1.
++This license is copied below, and is also available with a FAQ at:
++https://scripts.sil.org/OFL
++
++
++-----------------------------------------------------------
++SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
++-----------------------------------------------------------
++
++PREAMBLE
++The goals of the Open Font License (OFL) are to stimulate worldwide
++development of collaborative font projects, to support the font creation
++efforts of academic and linguistic communities, and to provide a free and
++open framework in which fonts may be shared and improved in partnership
++with others.
++
++The OFL allows the licensed fonts to be used, studied, modified and
++redistributed freely as long as they are not sold by themselves. The
++fonts, including any derivative works, can be bundled, embedded,
++redistributed and/or sold with any software provided that any reserved
++names are not used by derivative works. The fonts and derivatives,
++however, cannot be released under any other type of license. The
++requirement for fonts to remain under this license does not apply
++to any document created using the fonts or their derivatives.
++
++DEFINITIONS
++"Font Software" refers to the set of files released by the Copyright
++Holder(s) under this license and clearly marked as such. This may
++include source files, build scripts and documentation.
++
++"Reserved Font Name" refers to any names specified as such after the
++copyright statement(s).
++
++"Original Version" refers to the collection of Font Software components as
++distributed by the Copyright Holder(s).
++
++"Modified Version" refers to any derivative made by adding to, deleting,
++or substituting -- in part or in whole -- any of the components of the
++Original Version, by changing formats or by porting the Font Software to a
++new environment.
++
++"Author" refers to any designer, engineer, programmer, technical
++writer or other person who contributed to the Font Software.
++
++PERMISSION & CONDITIONS
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of the Font Software, to use, study, copy, merge, embed, modify,
++redistribute, and sell modified and unmodified copies of the Font
++Software, subject to the following conditions:
++
++1) Neither the Font Software nor any of its individual components,
++in Original or Modified Versions, may be sold by itself.
++
++2) Original or Modified Versions of the Font Software may be bundled,
++redistributed and/or sold with any software, provided that each copy
++contains the above copyright notice and this license. These can be
++included either as stand-alone text files, human-readable headers or
++in the appropriate machine-readable metadata fields within text or
++binary files as long as those fields can be easily viewed by the user.
++
++3) No Modified Version of the Font Software may use the Reserved Font
++Name(s) unless explicit written permission is granted by the corresponding
++Copyright Holder. This restriction only applies to the primary font name as
++presented to the users.
++
++4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
++Software shall not be used to promote, endorse or advertise any
++Modified Version, except to acknowledge the contribution(s) of the
++Copyright Holder(s) and the Author(s) or with their explicit written
++permission.
++
++5) The Font Software, modified or unmodified, in part or in whole,
++must be distributed entirely under this license, and must not be
++distributed under any other license. The requirement for fonts to
++remain under this license does not apply to any document created
++using the Font Software.
++
++TERMINATION
++This license becomes null and void if any of the above conditions are
++not met.
++
++DISCLAIMER
++THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
++OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
++COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
++INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
++DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
++OTHER DEALINGS IN THE FONT SOFTWARE.
+diff --git a/site/assets/pagelove-design/assets/fonts/jetbrainsmono-400.ttf b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-400.ttf
+new file mode 100644
+index 0000000..129e882
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-400.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/jetbrainsmono-500.ttf b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-500.ttf
+new file mode 100644
+index 0000000..51ccd91
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-500.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/jetbrainsmono-600.ttf b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-600.ttf
+new file mode 100644
+index 0000000..003757e
+Binary files /dev/null and b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-600.ttf differ
+diff --git a/site/assets/pagelove-design/assets/fonts/jetbrainsmono-OFL.txt b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-OFL.txt
+new file mode 100644
+index 0000000..a95a9da
+--- /dev/null
++++ b/site/assets/pagelove-design/assets/fonts/jetbrainsmono-OFL.txt
+@@ -0,0 +1,93 @@
++Copyright 2020 The JetBrains Mono Project Authors
++
++This Font Software is licensed under the SIL Open Font License, Version 1.1.
++
++This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
++
++
++-----------------------------------------------------------
++SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
++-----------------------------------------------------------
++
++PREAMBLE
++The goals of the Open Font License (OFL) are to stimulate worldwide
++development of collaborative font projects, to support the font creation
++efforts of academic and linguistic communities, and to provide a free and
++open framework in which fonts may be shared and improved in partnership
++with others.
++
++The OFL allows the licensed fonts to be used, studied, modified and
++redistributed freely as long as they are not sold by themselves. The
++fonts, including any derivative works, can be bundled, embedded,
++redistributed and/or sold with any software provided that any reserved
++names are not used by derivative works. The fonts and derivatives,
++however, cannot be released under any other type of license. The
++requirement for fonts to remain under this license does not apply
++to any document created using the fonts or their derivatives.
++
++DEFINITIONS
++"Font Software" refers to the set of files released by the Copyright
++Holder(s) under this license and clearly marked as such. This may
++include source files, build scripts and documentation.
++
++"Reserved Font Name" refers to any names specified as such after the
++copyright statement(s).
++
++"Original Version" refers to the collection of Font Software components as
++distributed by the Copyright Holder(s).
++
++"Modified Version" refers to any derivative made by adding to, deleting,
++or substituting -- in part or in whole -- any of the components of the
++Original Version, by changing formats or by porting the Font Software to a
++new environment.
++
++"Author" refers to any designer, engineer, programmer, technical
++writer or other person who contributed to the Font Software.
++
++PERMISSION & CONDITIONS
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of the Font Software, to use, study, copy, merge, embed, modify,
++redistribute, and sell modified and unmodified copies of the Font
++Software, subject to the following conditions:
++
++1) Neither the Font Software nor any of its individual components,
++in Original or Modified Versions, may be sold by itself.
++
++2) Original or Modified Versions of the Font Software may be bundled,
++redistributed and/or sold with any software, provided that each copy
++contains the above copyright notice and this license. These can be
++included either as stand-alone text files, human-readable headers or
++in the appropriate machine-readable metadata fields within text or
++binary files as long as those fields can be easily viewed by the user.
++
++3) No Modified Version of the Font Software may use the Reserved Font
++Name(s) unless explicit written permission is granted by the corresponding
++Copyright Holder. This restriction only applies to the primary font name as
++presented to the users.
++
++4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
++Software shall not be used to promote, endorse or advertise any
++Modified Version, except to acknowledge the contribution(s) of the
++Copyright Holder(s) and the Author(s) or with their explicit written
++permission.
++
++5) The Font Software, modified or unmodified, in part or in whole,
++must be distributed entirely under this license, and must not be
++distributed under any other license. The requirement for fonts to
++remain under this license does not apply to any document created
++using the Font Software.
++
++TERMINATION
++This license becomes null and void if any of the above conditions are
++not met.
++
++DISCLAIMER
++THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
++OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
++COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
++INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
++DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
++FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
++OTHER DEALINGS IN THE FONT SOFTWARE.
+diff --git a/site/assets/pagelove-design/fonts.css b/site/assets/pagelove-design/fonts.css
+index 9d01696..e060ecf 100644
+--- a/site/assets/pagelove-design/fonts.css
++++ b/site/assets/pagelove-design/fonts.css
+@@ -1,3 +1,9 @@
+-@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/inter-400.ttf') format('truetype')}
+-@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/inter-500.ttf') format('truetype')}
+-@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/inter-600.ttf') format('truetype')}
++@font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/fraunces-400.ttf') format('truetype')}
++@font-face{font-family:'Fraunces';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/fraunces-500.ttf') format('truetype')}
++@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/fraunces-600.ttf') format('truetype')}
++@font-face{font-family:'Inter Tight';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/intertight-400.ttf') format('truetype')}
++@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/intertight-500.ttf') format('truetype')}
++@font-face{font-family:'Inter Tight';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/intertight-600.ttf') format('truetype')}
++@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/jetbrainsmono-400.ttf') format('truetype')}
++@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/jetbrainsmono-500.ttf') format('truetype')}
++@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/jetbrainsmono-600.ttf') format('truetype')}
+diff --git a/site/assets/pagelove-design/theme.css b/site/assets/pagelove-design/theme.css
+index f4425aa..fa0ee53 100644
+--- a/site/assets/pagelove-design/theme.css
++++ b/site/assets/pagelove-design/theme.css
+@@ -1,19 +1,19 @@
+ :root { color-scheme: var(--design-color-scheme); }
+ /* Generated from tokens/foundations.json. */
+ :root {
+-  --color-polo-blue-0: #f3efff;
+-  --color-polo-blue-50: #e8e2f7;
+-  --color-polo-blue-100: #dcd4ec;
+-  --color-polo-blue-200: #c9bfdc;
+-  --color-polo-blue-300: #aea2c6;
+-  --color-polo-blue-400: #9284ac;
+-  --color-polo-blue-500: #78698e;
+-  --color-polo-blue-600: #5d5070;
+-  --color-polo-blue-700: #453954;
+-  --color-polo-blue-800: #33283f;
+-  --color-polo-blue-900: #241c30;
+-  --color-polo-blue-950: #191321;
+-  --color-polo-blue-1000: #100d17;
++  --color-polo-blue-0: #f7f2eb;
++  --color-polo-blue-50: #eee8df;
++  --color-polo-blue-100: #e8e4df;
++  --color-polo-blue-200: #d4cec7;
++  --color-polo-blue-300: #b9b1a9;
++  --color-polo-blue-400: #9d958f;
++  --color-polo-blue-500: #7f7772;
++  --color-polo-blue-600: #625c5c;
++  --color-polo-blue-700: #42404d;
++  --color-polo-blue-800: #272737;
++  --color-polo-blue-900: #1a1c30;
++  --color-polo-blue-950: #131525;
++  --color-polo-blue-1000: #0c0e1a;
+   --color-purple-50: #f1f4fc;
+   --color-purple-100: #e6eaf9;
+   --color-purple-200: #ced5f2;
+@@ -69,17 +69,17 @@
+   --color-neon-carrot-800: #9d390f;
+   --color-neon-carrot-900: #7e3110;
+   --color-neon-carrot-950: #441606;
+-  --color-cornflower-blue-50: #f4efff;
+-  --color-cornflower-blue-100: #e9deff;
+-  --color-cornflower-blue-200: #d7c4ff;
+-  --color-cornflower-blue-300: #c5a9f7;
+-  --color-cornflower-blue-400: #b491ec;
+-  --color-cornflower-blue-500: #9370cf;
+-  --color-cornflower-blue-600: #7654ac;
+-  --color-cornflower-blue-700: #5f408e;
+-  --color-cornflower-blue-800: #4d3374;
+-  --color-cornflower-blue-900: #3e2a5c;
+-  --color-cornflower-blue-950: #261c37;
++  --color-cornflower-blue-50: #f5f2fb;
++  --color-cornflower-blue-100: #e8e2f2;
++  --color-cornflower-blue-200: #d5cde5;
++  --color-cornflower-blue-300: #c8bfdf;
++  --color-cornflower-blue-400: #b8b0d8;
++  --color-cornflower-blue-500: #9489b9;
++  --color-cornflower-blue-600: #726596;
++  --color-cornflower-blue-700: #584b79;
++  --color-cornflower-blue-800: #44385f;
++  --color-cornflower-blue-900: #332a48;
++  --color-cornflower-blue-950: #211b30;
+   --color-malachite-50: #f0fdf0;
+   --color-malachite-100: #ddfbdf;
+   --color-malachite-200: #bdf5c1;
+@@ -125,9 +125,9 @@
+   --space-025: 2px;
+   --space-050: 4px;
+   --space-075: 6px;
+-  --font-family-brand: Inter, system-ui, sans-serif;
+-  --font-family-secondary: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+-  --font-family-code: 'Fira Code', ui-monospace, Menlo, Consolas, monospace;
++  --font-family-brand: Fraunces, Georgia, serif;
++  --font-family-secondary: "Inter Tight", system-ui, sans-serif;
++  --font-family-code: "JetBrains Mono", monospace;
+   --font-weight-400: 400;
+   --font-weight-450: 450;
+   --font-weight-500: 500;
+@@ -234,19 +234,19 @@
+   --grid-console-xl-columns: 12;
+   --grid-console-xl-gutter: var(--space-200);
+   --grid-console-xl-margin: var(--space-200);
+-  --design-radius-card: 8px;
+-  --design-radius-button: 8px;
+-  --design-heading-family: var(--font-family-secondary);
++  --design-radius-card: 16px;
++  --design-radius-button: 100px;
++  --design-heading-family: var(--font-family-brand);
+   --design-body-family: var(--font-family-secondary);
+-  --design-content-width: 1200px;
+-  --design-section-gap: 20px;
++  --design-content-width: 1080px;
++  --design-section-gap: 32px;
+   --design-shadow-panel: none;
+-  --design-page-padding: 40px;
+-  --design-panel-padding: 24px;
+-  --design-row-padding: 18px;
+-  --design-radius-input: 6px;
+-  --design-title-size: 2.75rem;
+-  --design-heading-tracking: -.04em;
++  --design-page-padding: 48px;
++  --design-panel-padding: 32px;
++  --design-row-padding: 24px;
++  --design-radius-input: 10px;
++  --design-title-size: 3.125rem;
++  --design-heading-tracking: -.025em;
+   --design-transition-duration: 160ms;
+   --design-text-small: 0.875rem;
+   --design-text-caption: 0.75rem;
+@@ -479,19 +479,19 @@
+   --text-warning: var(--color-neon-carrot-300);
+ }
+ :root {
+-  --design-radius-card: 8px;
+-  --design-radius-button: 8px;
+-  --design-heading-family: var(--font-family-secondary);
++  --design-radius-card: 16px;
++  --design-radius-button: 100px;
++  --design-heading-family: var(--font-family-brand);
+   --design-body-family: var(--font-family-secondary);
+-  --design-content-width: 1200px;
+-  --design-section-gap: 20px;
++  --design-content-width: 1080px;
++  --design-section-gap: 32px;
+   --design-shadow-panel: none;
+-  --design-page-padding: 40px;
+-  --design-panel-padding: 24px;
+-  --design-row-padding: 18px;
+-  --design-radius-input: 6px;
+-  --design-title-size: 2.75rem;
+-  --design-heading-tracking: -.04em;
++  --design-page-padding: 48px;
++  --design-panel-padding: 32px;
++  --design-row-padding: 24px;
++  --design-radius-input: 10px;
++  --design-title-size: 3.125rem;
++  --design-heading-tracking: -.025em;
+   --design-transition-duration: 160ms;
+   --design-text-small: 0.875rem;
+   --design-text-caption: 0.75rem;
+diff --git a/site/index.html b/site/index.html
+index 28f28e5..4dd6717 100644
+--- a/site/index.html
++++ b/site/index.html
+@@ -1 +1 @@
+-<!doctype html><html data-design="midnight" lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A sample album for pictures, the stories beside them and the people you choose to share them with."><title>Collected Light</title><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head><body data-app="photos"><a href="#main" class="skip">Skip to content</a><header class="topbar"><a class="brand" href="./"><span aria-hidden="true" class="brand-mark">CL</span>Collected Light</a><nav class="actions" aria-label="Application"><button id="manage" type="button" aria-pressed="false" class="pl-button pl-button--outlined pl-button--md">Manage content</button></nav></header><main id="main"><section class="hero"><h1>Keep the little moments.</h1><p>A sample album for pictures, the stories beside them and the people you choose to share them with.</p><p class="sample-note">Fictional sample · Make this template your own.</p><a href="#collection" class="primary-entry pl-button pl-button--strong pl-button--md">Browse the collection</a></section><section class="workspace" aria-label="photos"><div class="toolbar"><label class="search" for="search">Search photos<input id="search" type="search" autocomplete="off"></label><div class="actions"><button id="add" type="button" data-edit-only="" hidden class="pl-button pl-button--strong pl-button--md">Add photo</button><button id="save" type="button" data-edit-only="" hidden disabled class="pl-button pl-button--strong pl-button--md">Save changes</button></div></div><p id="summary" class="summary"></p><p id="status" class="status" role="status" aria-live="polite">Loading source…</p><section id="recovery" class="recovery" hidden><h2>Your local draft is available</h2><p>Recover it for editing, or export it before reloading.</p><div class="actions"><button id="recover" type="button" class="pl-button pl-button--outlined pl-button--md">Recover draft</button><button id="download-draft" type="button" class="pl-button pl-button--outlined pl-button--md">Export draft</button></div></section><p id="result-count"></p><div id="collection" class="collection"></div><details data-edit-only="" hidden><summary>Export, import and recovery</summary><p>Exports include all records, including drafts. Keep private exports secure. Import replaces only your working draft until a save is accepted.</p><div class="actions"><button id="export" type="button" class="pl-button pl-button--outlined pl-button--md">Export HTML</button><label class="file-control">Import HTML<input id="import" type="file" accept=".html,text/html"></label><button id="reload" type="button" class="pl-button pl-button--outlined pl-button--md">Reload source</button></div></details></section><noscript><p>This editor requires JavaScript. App content is stored as semantic HTML; ask the owner for a permitted reading/export view.</p></noscript></main><footer><span>Collected Light · Fictional sample content</span><a href="https://pagelove.com">Made for Pagelove</a></footer><dialog id="editor" aria-labelledby="editor-title"><h2 id="editor-title">Edit photo</h2><form id="edit-form"><label class="field" for="field-title">Photo title<input id="field-title" name="title" type="text" maxlength="5000" required></label><label class="field" for="field-album">Album<input id="field-album" name="album" type="text" maxlength="5000" required></label><label class="field" for="field-date">Date<input id="field-date" name="date" type="date" maxlength="5000" required></label><label class="field" for="field-image">Image URL<input id="field-image" name="image" type="text" maxlength="350000"><small>HTTPS image URL, or upload a local image below.</small></label><label class="field" for="field-alt">Image description<input id="field-alt" name="alt" type="text" maxlength="5000"></label><label class="field" for="field-description">Caption<textarea id="field-description" name="description" maxlength="5000" required></textarea></label><label class="field" for="field-state">Publication state<select required id="field-state" name="state"><option value="Draft">Draft</option><option value="Published">Published</option></select></label><label class="field">Upload photo<input id="photo-upload" type="file" accept="image/png,image/jpeg,image/webp"><small>Up to 5 MB. Resized locally; photo bytes become part of the saved HTML document.</small></label><p id="editor-error" class="editor-error" role="alert"></p><div class="dialog-actions"><button id="cancel-edit" type="button" class="pl-button pl-button--outlined pl-button--md">Cancel</button><button type="submit" class="pl-button pl-button--strong pl-button--md">Apply to draft</button></div></form></dialog></body></html>
++<!doctype html><html data-design="invitation" lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A sample album for pictures, the stories beside them and the people you choose to share them with."><title>Collected Light</title><link rel="stylesheet" href="./styles.css"><script type="module" src="./app.mjs"></script></head><body data-app="photos"><a href="#main" class="skip">Skip to content</a><header class="topbar"><a class="brand" href="./"><span aria-hidden="true" class="brand-mark">CL</span>Collected Light</a><nav class="actions" aria-label="Application"><button id="manage" type="button" aria-pressed="false" class="pl-button pl-button--outlined pl-button--md">Manage content</button></nav></header><main id="main"><section class="hero"><h1>Keep the little moments.</h1><p>A sample album for pictures, the stories beside them and the people you choose to share them with.</p><p class="sample-note">Fictional sample · Make this template your own.</p><a href="#collection" class="primary-entry pl-button pl-button--strong pl-button--md">Browse the collection</a></section><section class="workspace" aria-label="photos"><div class="toolbar"><label class="search" for="search">Search photos<input id="search" type="search" autocomplete="off"></label><div class="actions"><button id="add" type="button" data-edit-only="" hidden class="pl-button pl-button--strong pl-button--md">Add photo</button><button id="save" type="button" data-edit-only="" hidden disabled class="pl-button pl-button--strong pl-button--md">Save changes</button></div></div><p id="summary" class="summary"></p><p id="status" class="status" role="status" aria-live="polite">Loading source…</p><section id="recovery" class="recovery" hidden><h2>Your local draft is available</h2><p>Recover it for editing, or export it before reloading.</p><div class="actions"><button id="recover" type="button" class="pl-button pl-button--outlined pl-button--md">Recover draft</button><button id="download-draft" type="button" class="pl-button pl-button--outlined pl-button--md">Export draft</button></div></section><p id="result-count"></p><div id="collection" class="collection"></div><details data-edit-only="" hidden><summary>Export, import and recovery</summary><p>Exports include all records, including drafts. Keep private exports secure. Import replaces only your working draft until a save is accepted.</p><div class="actions"><button id="export" type="button" class="pl-button pl-button--outlined pl-button--md">Export HTML</button><label class="file-control">Import HTML<input id="import" type="file" accept=".html,text/html"></label><button id="reload" type="button" class="pl-button pl-button--outlined pl-button--md">Reload source</button></div></details></section><noscript><p>This editor requires JavaScript. App content is stored as semantic HTML; ask the owner for a permitted reading/export view.</p></noscript></main><footer><span>Collected Light · Fictional sample content</span><a href="https://pagelove.com">Made for Pagelove</a></footer><dialog id="editor" aria-labelledby="editor-title"><h2 id="editor-title">Edit photo</h2><form id="edit-form"><label class="field" for="field-title">Photo title<input id="field-title" name="title" type="text" maxlength="5000" required></label><label class="field" for="field-album">Album<input id="field-album" name="album" type="text" maxlength="5000" required></label><label class="field" for="field-date">Date<input id="field-date" name="date" type="date" maxlength="5000" required></label><label class="field" for="field-image">Image URL<input id="field-image" name="image" type="text" maxlength="350000"><small>HTTPS image URL, or upload a local image below.</small></label><label class="field" for="field-alt">Image description<input id="field-alt" name="alt" type="text" maxlength="5000"></label><label class="field" for="field-description">Caption<textarea id="field-description" name="description" maxlength="5000" required></textarea></label><label class="field" for="field-state">Publication state<select required id="field-state" name="state"><option value="Draft">Draft</option><option value="Published">Published</option></select></label><label class="field">Upload photo<input id="photo-upload" type="file" accept="image/png,image/jpeg,image/webp"><small>Up to 5 MB. Resized locally; photo bytes become part of the saved HTML document.</small></label><p id="editor-error" class="editor-error" role="alert"></p><div class="dialog-actions"><button id="cancel-edit" type="button" class="pl-button pl-button--outlined pl-button--md">Cancel</button><button type="submit" class="pl-button pl-button--strong pl-button--md">Apply to draft</button></div></form></dialog></body></html>
